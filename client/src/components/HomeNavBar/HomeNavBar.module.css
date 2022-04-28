@@ -1,0 +1,6 @@
+.background {
+    position: fixed;
+    height: 100px;
+    width: 850px;
+    left: calc(50% - 425px);
+}

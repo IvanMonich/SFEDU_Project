@@ -1,0 +1,108 @@
+.DocStyle{
+    display:block;
+    padding-left: 5px;
+    width: 250px;
+    height: 270px;
+    position: absolute;
+    background: rgba(39, 93, 175, 0.4);
+    align-items: center;
+    /*overflow: auto;*/
+    border-radius: 1px;
+    right: 0;
+    animation-name: DocListAnim;
+}
+.list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #18aaaa;
+}
+
+.list::-webkit-scrollbar-track {
+    border-radius: 2px;
+}
+.head{
+    position: absolute;
+    display: flex;
+    top:0;
+    right: 0;
+    justify-content: right;
+    gap: 4px;
+}
+
+.list{
+    position: relative;
+    top: 15px;
+    overflow: auto;
+    height:240px;
+}
+.closeBtn {
+    width: 15px;
+    height: px;
+    border-radius: 2px;
+    background: #18aaaa;
+    position: relative;
+    display: block;
+    margin-right:4px;
+    cursor: pointer;
+    border: #060e13 solid 0.25px;
+}
+.closeBtn:before,
+.closeBtn:after {
+    content: '';
+    width: 80%;
+    height: 1px;
+    background: #BFE2FF;
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    transform: rotate(45deg);
+    transition: all 0.5s ease-out;
+}
+.closeBtn:after {
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-out;
+}
+.closeBtn:hover:before,
+.closeBtn:hover:after {
+    transform: rotate(120deg);
+    background: #FFFAFA;
+}
+
+
+
+.resBtn{
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background: #18aaaa;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border: #060e13 solid 0.25px;
+
+}
+.resBtn:before{
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #BFE2FF;
+    position: absolute;
+    left:1px;
+    top:1px;
+    border: 0.25px solid #060e13;
+    /*transform: scale(0.5);*/
+    transition: all 0.5s ease-out;
+}
+
+.resBtn:after {
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+}
+.resBtn:hover:before,
+.resBtn:hover:after {
+    transform: scale(1.2);
+    background:#FFFAFA;
+}

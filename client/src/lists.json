@@ -1,0 +1,126 @@
+[
+  {
+    "sampleName": "First",
+    "password": "First",
+    "lists": [
+      {
+        "listNumber": 0,
+        "listBlocks": [
+          {
+            "blockNumber": 0,
+            "blockHeight": 94,
+            "blockWidth": 1240,
+            "blockFontFamily": "Times New Roman",
+            "blockFontSize": "18px",
+            "blockFontWeight": "normal",
+            "blockFontStyle": "italic",
+            "blockTextAlign": "center",
+            "blockTextDecorationLine": "none",
+            "color": "black",
+            "content": "lists_First"
+          },
+          {
+            "blockNumber": 1,
+            "blockHeight": 242,
+            "blockWidth": 1240,
+            "blockFontFamily": "Times New Roman",
+            "blockFontSize": "14px",
+            "blockFontWeight": "bold",
+            "blockFontStyle": "normal",
+            "blockTextAlign": "center",
+            "blockTextDecorationLine": "none",
+            "color": "#ff0000",
+            "content": "Text Block"
+          },
+          {
+            "blockNumber": 2,
+            "blockHeight": 186,
+            "blockWidth": 1240,
+            "blockFontFamily": "Arial",
+            "blockFontSize": 14,
+            "blockFontWeight": "normal",
+            "blockFontStyle": "normal",
+            "blockTextAlign": "right",
+            "blockTextDecorationLine": "underline",
+            "color": "#00ff1e",
+            "content": "Text Block"
+          },
+          {
+            "blockNumber": 3,
+            "blockHeight": 164,
+            "blockWidth": 1240,
+            "blockFontFamily": "Arial",
+            "blockFontSize": "18px",
+            "blockFontWeight": "normal",
+            "blockFontStyle": "normal",
+            "blockTextAlign": "center",
+            "blockTextDecorationLine": "underline",
+            "content": "Text Block"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleName": "Second",
+    "password": "Second",
+    "lists": [
+      {
+        "listNumber": 0,
+        "listBlocks": [
+          {
+            "blockNumber": 0,
+            "blockHeight": 94,
+            "blockWidth": 1240,
+            "blockFontFamily": "Times New Roman",
+            "blockFontSize": "18px",
+            "blockFontWeight": "normal",
+            "blockFontStyle": "italic",
+            "blockTextAlign": "center",
+            "blockTextDecorationLine": "none",
+            "color": "black",
+            "content": "lists_Second"
+          },
+          {
+            "blockNumber": 1,
+            "blockHeight": 242,
+            "blockWidth": 1240,
+            "blockFontFamily": "Times New Roman",
+            "blockFontSize": "14px",
+            "blockFontWeight": "bold",
+            "blockFontStyle": "normal",
+            "blockTextAlign": "center",
+            "blockTextDecorationLine": "none",
+            "color": "#ff0000",
+            "content": "Text Block"
+          },
+          {
+            "blockNumber": 2,
+            "blockHeight": 186,
+            "blockWidth": 1240,
+            "blockFontFamily": "Arial",
+            "blockFontSize": 14,
+            "blockFontWeight": "normal",
+            "blockFontStyle": "normal",
+            "blockTextAlign": "right",
+            "blockTextDecorationLine": "underline",
+            "color": "#00ff1e",
+            "content": "Text Block"
+          },
+          {
+            "blockNumber": 3,
+            "blockHeight": 164,
+            "blockWidth": 1240,
+            "blockFontFamily": "Arial",
+            "blockFontSize": "18px",
+            "blockFontWeight": "normal",
+            "blockFontStyle": "normal",
+            "blockTextAlign": "center",
+            "blockTextDecorationLine": "underline",
+            "content": "Text Block"
+          }
+        ]
+      }
+    ]
+  }
+]

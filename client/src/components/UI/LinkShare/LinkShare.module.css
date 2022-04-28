@@ -1,0 +1,33 @@
+.mainBox{
+    position: fixed;
+    display: block;
+    vertical-align: middle;
+    top: 0;
+    left: calc(50% - 300px);
+    width: 600px;
+    height:115px;
+    background-color: #D7DAEC;
+    border-radius: 50px;
+}
+.infoString{
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    top: 40%;
+    left:8%;
+    width: 500px;
+    height:30px;
+    background-color: #FFFAFA;
+
+}
+.linktext{
+    margin-left: 5px;
+    line-height: 30px;
+}
+.linkImg{
+    height:18px;
+    width: 22px;
+
+}

@@ -1,0 +1,559 @@
+html {
+    overflow: auto;
+}
+
+@keyframes ImageSettingsWindow {
+    from {left: 100%}
+    to {left: calc(100% - 353px - 54px)}
+}
+
+@keyframes TextSettingsWindow {
+    from {left: 100%}
+    to {left: calc(100% - 353px - 54px)}
+}
+
+@keyframes TableSettingsWindow {
+    from {left: 100%}
+    to {left: calc(100% - 353px - 54px)}
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: calc(1740px + 132px * 2);
+    left: 0;
+    top: 0;
+    min-height: 929px;
+    padding-bottom: 132px;
+
+    display: flex;
+    background: #D7DAEC;
+}
+
+.workSpace {
+    position: absolute;
+    width: 1240px;
+    height: 1754px;
+    top: 132px;
+    left: calc(50% - 620px);
+
+    background: white;
+}
+
+.toolPanel {
+    position: fixed;
+    width: 143px;
+    height: 470px;
+    top: 206px;
+    left: 118px;
+
+    display: flex;
+
+    background: #C1CEEF;
+}
+
+.toolPanelImageButton {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 31px;
+    top: 31px;
+
+    background: url("./img/toolImage.svg");
+
+    cursor: pointer;
+}
+
+.toolPanelTextButton {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 31px;
+    top: 139px;
+
+    background: url("./img/toolText.svg");
+
+    cursor: pointer;
+}
+
+.toolPanelFigureButton {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 31px;
+    top: 247px;
+
+    background: url("./img/toolFigure.svg");
+
+    cursor: pointer;
+}
+
+.toolPanelTableButton {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 31px;
+    top: 355px;
+
+    background: url("./img/toolTable.svg");
+
+    cursor: pointer;
+}
+
+.toolPanelImageButton:hover {
+    left: 27px;
+    top: 27px;
+    width: 90px;
+    height: 90px;
+
+    background: url("img/toolImagePressed.svg");
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: all 100ms;
+}
+
+.toolPanelImageButton:hover:after {
+    content: "Изображение";
+    position: absolute;
+    top: calc(50% - 17px);  /*29px;*/
+    left: calc(100% + 12px); /*102px;*/
+    height: 28px;
+    width: 110px;
+    border: 1px #2588BF solid;
+    padding: 6px 0 0 7px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    background: white;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2588BF;
+}
+
+.toolPanelTextButton:hover {
+    left: 27px;
+    top: 134px;
+    width: 90px;
+    height: 90px;
+
+    background-position-y: 20px;
+    background-position-x: 20px;
+    background: url("img/toolTextPressed.svg");
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: all 100ms;
+}
+
+.toolPanelTextButton:hover:after {
+    content: "Текст";
+    position: absolute;
+    top: calc(50% - 17px);  /*29px;*/
+    left: calc(100% + 12px); /*102px;*/
+    height: 28px;
+    width: 85px;
+    border: 1px #2588BF solid;
+    padding: 6px 0 0 40px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    background: white;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2588BF;
+}
+
+.toolPanelFigureButton:hover {
+    left: 27px;
+    top: 242px;
+    width: 90px;
+    height: 90px;
+
+    background-position-y: 20px;
+    background-position-x: 20px;
+    background: url("img/toolFigurePressed.svg");
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: all 100ms;
+}
+
+.toolPanelFigureButton:hover:after {
+    content: "Фигура";
+    position: absolute;
+    top: calc(50% - 17px);  /*29px;*/
+    left: calc(100% + 12px); /*102px;*/
+    height: 28px;
+    width: 93px;
+    border: 1px #2588BF solid;
+    padding: 6px 0 0 32px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    background: white;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2588BF;
+}
+
+.toolPanelTableButton:hover {
+    left: 27px;
+    top: 350px;
+    width: 90px;
+    height: 90px;
+
+    background-position-y: 20px;
+    background-position-x: 20px;
+    background: url("img/toolTablePressed.svg");
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: all 100ms;
+}
+
+.toolPanelTableButton:hover:after {
+    content: "Таблица";
+    position: absolute;
+    top: calc(50% - 17px);  /*29px;*/
+    left: calc(100% + 12px); /*102px;*/
+    height: 28px;
+    width: 96px;
+    border: 1px #2588BF solid;
+    padding: 6px 0 0 29px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    background: white;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2588BF;
+}
+
+.ImageSettingsWindow {
+    position: fixed;
+    top: 206px;
+    left: calc(100% - 353px - 54px);
+    width: 353px;
+    height: 233px;
+
+    border: 1px black solid;
+
+    background: white;
+
+    animation: ImageSettingsWindow 400ms ease-in-out;
+}
+
+.TextSettingsWindow {
+    position: fixed;
+    top: 206px;
+    left: calc(100% - 353px - 54px);
+    width: 290px;
+    height: 273px;
+
+    border: 1px black solid;
+
+    background: white;
+
+    animation: TextSettingsWindow 400ms ease-in-out;
+}
+
+.FigureSettingsWindow {
+    position: fixed;
+    top: 200px;
+    left: 300px;
+    width: 100px;
+    height: 100px;
+
+    background: red;
+}
+
+.TableSettingsWindow {
+    position: fixed;
+    top: 206px;
+    left: calc(100% - 353px - 54px);
+    width: 296px;
+    height: 368px;
+
+    border: 1px black solid;
+
+    background: white;
+
+    animation: TableSettingsWindow 400ms ease-in-out;
+}
+
+.ImageSettingsWindowHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 38px;
+    width: calc(100% - 10px);
+    display: flex;
+
+    padding: 2px 0 0 10px;
+
+    border-bottom: 1px black solid;
+    color: white;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+
+    background: #2588BF;
+}
+
+.closeWindow {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: calc(100% - 34px);
+    top: calc(50% - 16px);
+
+    cursor: pointer;
+
+    background: url("./img/close.svg");
+}
+
+.transparencyOption {
+    position: relative;
+    width: 348px;
+    height: 31px;
+
+    top: 10px;
+
+    padding: 0 0 0 5px;
+
+    margin: 0 0 15px 0;
+
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    cursor: default;
+}
+
+.transparencyOption:after {
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    left: 4px;
+    top: -1px;
+
+    cursor: pointer;
+
+    background: url("./img/plus.svg");
+}
+
+.FontSet {
+    display: flex;
+    position: relative;
+    width: 279px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+.FontSelection {
+    position: relative;
+    width: 200px;
+    height: 40px;
+
+    padding: 0 0 0 8px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px 2px 10px 10px;
+
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.firstFontStyle {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+}
+
+.fontSizeSelection {
+    position: relative;
+    width: 55px;
+    height: 40px;
+
+    margin-left: 8px;
+
+    padding: 0 0 0 8px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px 2px 10px 10px;
+
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.TextStyle {
+    position: relative;
+    width: 279px;
+    height: 50px;
+    left: 10px;
+    top: 15px;
+
+    text-align: center;
+
+    display: flex;
+
+}
+
+.TextStyleInter {
+    position: relative;
+    width: 112px;
+    height: 50px;
+}
+
+.alignment {
+    position: relative;
+    width: 108px;
+    height: 50px;
+
+    margin-left: 8px;
+}
+
+.SpanSettings {
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.TextStyleImg {
+    margin-left: 2px;
+
+    cursor: pointer;
+}
+
+.colorInput {
+
+}
+
+.AddListButton {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+
+    top: 100px;
+    left: 100px;
+
+    background: #1554F7;
+    cursor: pointer;
+}
+
+.AddBlocksButton {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+
+    top: 100px;
+    left: 200px;
+
+    background: red;
+    cursor: pointer;
+}
+
+.getPasswordWindow {
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    display: flex;
+
+    border: 1px solid black;
+    border-radius: 50px;
+
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+
+    background: white;
+}
+
+.getPasswordWindowInput {
+    position: absolute;
+    width: 284px;
+    padding: 8px;
+
+    top: 50px;
+    left: calc(50% - 150px);
+
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.getPasswordWindowButton {
+    position: relative;
+    width: 120px;
+    height: 24px;
+
+    margin-left: 40px;
+
+    padding-top: 6px;
+
+    text-align: center;
+    color: white;
+
+    border-radius: 10px;
+
+    top: 150px;
+    left: 20px;
+
+    background: #1554F7;
+
+    cursor: pointer;
+}
+
+.getPasswordWindowButton:hover {
+    background: white;
+    color: #1554F7;
+    transition: all 200ms;
+}
+

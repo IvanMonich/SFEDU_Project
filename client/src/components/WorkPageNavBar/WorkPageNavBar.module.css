@@ -1,0 +1,178 @@
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    background: #C1CEEF;
+}
+
+.toHomePage {
+    position: absolute;
+    top: 29px;
+    left: 397px;
+    align-content: center;
+    display: flex;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-decoration: none;
+
+    color: black;
+    cursor: pointer;
+}
+
+.toHomePageIMG {
+    position: relative;
+    top: 2px;
+    width: 29px;
+    height: 30px;
+
+    background: url("./img/dashicons-arrow-left-alt2.svg");
+}
+
+.navButtons {
+    position: absolute;
+    top: 16px;
+    left: calc(50% - 186.5px);  /*811px;*/
+    height: 53px;
+    width: 363px;
+    display: flex;
+    flex-direction:row;
+}
+
+.navFileButton {
+    position: absolute;
+    width: 97px;
+    top: 10px;
+    left: 10px;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.navFileImg {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+
+    background: url("./img/navFile.svg");
+}
+
+.navFormatButton {
+    position: absolute;
+    width: 126px;
+    top: 10px;
+    left: 126px;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.navFormatImg {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+
+    background: url("./img/navFormat.svg");
+}
+
+.navViewButton {
+    position: absolute;
+    width: 79px;
+    top: 10px;
+    left: 263px;
+
+    font-family: Prompt, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.navViewImg {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+
+    background: url("./img/navView.svg");
+}
+
+.toHomePage:hover {
+    color: #2588BF;
+
+    transition: all 100ms;
+}
+
+.toHomePage:hover .toHomePageIMG {
+    background: url("./img/toHomePagePressed.svg");
+
+    transition: all 100ms;
+}
+
+.navFileButton:hover {
+    color: #2588BF;
+
+    transition: all 100ms;
+}
+
+.navFileButton:hover .navFileImg {
+    background: url("./img/navFilePressed.svg");
+
+    transition: all 100ms;
+}
+
+.navFormatButton:hover {
+    color: #2588BF;
+
+    transition: all 100ms;
+}
+
+.navFormatButton:hover .navFormatImg {
+    background: url("./img/navFormatPressed.svg");
+
+    transition: all 100ms;
+}
+
+.navViewButton:hover {
+    color: #2588BF;
+
+    transition: all 100ms;
+}
+
+.navViewButton:hover .navViewImg {
+    background: url("./img/navViewPressed.svg");
+
+    transition: all 100ms;
+}
+

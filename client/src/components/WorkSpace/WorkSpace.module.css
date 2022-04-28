@@ -1,0 +1,8 @@
+.workSpace {
+    position: absolute;
+    width: 1240px;
+    top: 132px;
+    left: calc(50% - 620px);
+
+    display: table;
+}

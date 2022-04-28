@@ -1,0 +1,56 @@
+import React from 'react';
+import classes from './Block.module.css'
+
+const Block = props => {
+    let div = document.getElementById(props.blockId)
+
+    function resizeBlock() {
+        document.addEventListener('mousemove', getElem())
+    }
+
+    function getElem() {
+        let blockCoordinates = document.getElementById(props.blockId).getBoundingClientRect()
+
+        return function (e) {
+            console.log("Right " + String(blockCoordinates.right))
+            console.log("PageX " + String(e.pageX))
+            console.log("Bottom " + String(blockCoordinates.bottom))
+            console.log("PageY " + String(e.pageY))
+            // console.log(Number(props.listTop))
+            // console.log(Number(e.pageY))
+            // props.listLeft + Number(div.style.width.slice(0, -2)) + Number(div.style.left.slice(0, -2)
+            // props.listTop + Number(div.style.height.slice(0, -2)) + Number(div.style.top.slice(0, -2)
+            if ((blockCoordinates.right > Number(e.pageX) && Number(e.pageX) > blockCoordinates.right - 10 )
+                &&
+                (blockCoordinates.bottom > Number(e.pageY) && Number(e.pageY) > blockCoordinates.bottom - 10)
+            ) {
+                console.log("ok")
+                div.style.cursor = "pointer"
+                div.style.width = (Number(e.pageX) - Number(blockCoordinates.left)) + "px"
+                div.style.height = (Number(e.pageY) - Number(blockCoordinates.top)) + "px"
+            }
+        }
+
+    }
+
+    function stopResizeBlock() {
+        document.removeEventListener('mousemove', getElem())
+    }
+
+    return (
+        <div id={ props.blockId }
+             className={classes.Blocks}
+             style={{
+                 height: props.height + "px",
+                 width: props.width + "px"
+             }}
+             onMouseDown={ resizeBlock }
+             onMouseUp={ stopResizeBlock }
+             // onMouseMove={ getElem("start") }
+        >
+            { props.listLeft }
+        </div>
+    );
+};
+
+export default Block;
