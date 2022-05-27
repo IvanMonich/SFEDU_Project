@@ -50,6 +50,7 @@ html {
     display: flex;
 
     background: #C1CEEF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .toolPanelImageButton {
@@ -480,26 +481,64 @@ html {
 
 .AddListButton {
     position: fixed;
-    height: 50px;
-    width: 50px;
+    top: 110px;
+    left: 10px;
 
-    top: 100px;
-    left: 100px;
+    text-align: center;
+    line-height: 50px;
+
+    width: 100px;
+    height: 50px;
 
     background: #1554F7;
+    color: white;
     cursor: pointer;
+
+    border-radius: 5px;
+
+    font-family: Russo One , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.AddListButton:hover {
+    background: white;
+    color: #1554F7;
+    border-radius: 15px;
+
+    transition: all 400ms;
 }
 
 .AddBlocksButton {
     position: fixed;
+    top: 110px;
+    left: 120px;
+
+    text-align: center;
+    line-height: 50px;
+
+    width: 100px;
     height: 50px;
-    width: 50px;
 
-    top: 100px;
-    left: 200px;
-
-    background: red;
+    background: #1554F7;
+    color: white;
     cursor: pointer;
+
+    border-radius: 5px;
+
+    font-family: Russo One , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.AddBlocksButton:hover {
+    background: white;
+    color: #1554F7;
+    border-radius: 15px;
+
+    transition: all 400ms;
 }
 
 .getPasswordWindow {
@@ -557,3 +596,58 @@ html {
     transition: all 200ms;
 }
 
+.saveButton {
+    position: fixed;
+    top: 110px;
+    left: 250px;
+
+    text-align: center;
+    line-height: 50px;
+
+    width: 100px;
+    height: 50px;
+
+    background: green;
+    color: white;
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    font-family: Russo One , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.saveButton:hover {
+    background: white;
+    color: green;
+    border-radius: 15px;
+
+    transition: all 400ms;
+}
+
+.blocksActions {
+    position: fixed;
+    left: 0;
+    top: 100px;
+
+    width: 360px;
+    height: 70px;
+
+    background: #C1CEEF;
+
+    border-bottom-right-radius: 5px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.peregorodka {
+    position: absolute;
+    left: 229px;
+    top: 5px;
+
+    font-family: Russo One, sans-serif;
+    font-style: normal;
+    font-size: 50px;
+}
