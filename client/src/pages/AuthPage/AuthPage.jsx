@@ -2,8 +2,7 @@ import React,  { useContext, useEffect, useState } from 'react';
 import classes from './AuthPage.module.css'
 import logo from './img/LEDO_logo.png'
 import authName from './img/AuthName.svg'
-import authImg from './img/authImg.svg'
-import regName from './img/RegName.svg'
+import authImg from './img/el_universal-access.svg'
 import inpImage from './img/inpImage.svg'
 import registerImage from './img/RegIMG.svg'
 import AuthInput from "../../components/UI/AuthInput/AuthInput";
