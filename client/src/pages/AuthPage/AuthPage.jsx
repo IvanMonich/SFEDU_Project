@@ -5,6 +5,7 @@ import authName from './img/AuthName.svg'
 import authImg from './img/authImg.svg'
 import regName from './img/RegName.svg'
 import inpImage from './img/inpImage.svg'
+import registerImage from './img/RegIMG.svg'
 import AuthInput from "../../components/UI/AuthInput/AuthInput";
 import AuthButton from "../../components/UI/MyButton/AuthButton";
 import { useHttp } from "../../hooks/http.hook";
@@ -81,7 +82,7 @@ const AuthPage = () => {
             {showRegField &&
                 <div className={classes.authField}>
                     <div className={classes.regTittle}>
-                        <span className={classes.regText}>Регистрация <img src={regName} alt=""/></span>
+                        <span className={classes.regText}>Регистрация <img src={registerImage} alt=""/></span>
                     </div>
                     <span className={classes.regTextLogin}>Укажите свой логин и пароль  для <br/> регистрации в системе</span>
                     <form action="">
